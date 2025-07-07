@@ -29,7 +29,15 @@ function App() {
         className="theme-toggle"
         onClick={toggleTheme}
         aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        style={{ position: 'fixed', top: 16, right: 16, zIndex: 999 }}
+        style={{
+          position: 'fixed',
+          top: 16,
+          right: 16,
+          zIndex: 999,
+          color: '#c0c0c0',
+          fontFamily: 'Arial, sans-serif',
+          backgroundColor: '#001e57',
+        }}
       >
         {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
       </button>
